@@ -17,12 +17,14 @@ composer install
 ```
 <br>
 
-CRUD 
+:bulb: CRUD 
+```
 $router->get('/users','UserController@getUsers');
 $router->post('/users','UserController@postUser');
 $router->get('/users/{id}','UserController@getUser');
 $router->put('/users/{id}','UserController@putUser');
 $router->delete('/users/{id}','UserController@deleteUser');
+```
 
 ```
 vendor/bin/phpunit --testdox
